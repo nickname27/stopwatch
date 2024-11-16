@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-width: 320px;
+}
+
+.stopwatch {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #13121a;
+    padding: 0 15px;
+}
+
+.stopwatch__wrap {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 0 15px #0000007a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 30px;
+    transition: 0.2s linear;
+}
+
+.stopwatch__wrap.first {
+    background: url(./img/gigachad1.jpg) no-repeat center/cover;
+}
+
+.stopwatch__wrap.second {
+    background: url(./img/gigachad2.jpg) no-repeat center/cover;
+}
+
+.stopwatch__wrap.third {
+    background: url(./img/gigachad3.jpg) no-repeat center/cover;
+}
+
+.stopwatch__wrap.fourth {
+    background: url(./img/gigachad4.jpg) no-repeat center/cover;
+}
+
+.stopwatch__wrap.fifth {
+    background: url(./img/gigachad5.jpg) no-repeat center/cover;
+}
+
+.stopwatch__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #0000008c;
+    border-radius: 20px;
+}
+
+.stopwatch__title {
+    color: #d1d0dd;
+    font-size: 30px;
+    font-family: sans-serif;
+    align-self: flex-start;
+    cursor: default;
+}
+
+.stopwatch__time {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stopwatch__hour,
+.stopwatch__min,
+.stopwatch__sec,
+.stopwatch__ms {
+    font-size: 50px;
+    color: #d1d0dd;
+    font-family: sans-serif;
+    cursor: default;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch__hour{
+    display: none;
+}
+
+.stopwatch__dotsHour{
+    display: none;
+}
+
+.stopwatch__hour.active{
+    display: flex;
+}
+
+.stopwatch__dotsHour.active{
+    display: block;
+}
+
+.stopwatch__dots,
+.stopwatch__dotsHour,
+.stopwatch__dot {
+    font-family: none;
+    font-size: 50px;
+    color: #d1d0dd;
+    cursor: default;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.stopwatch__start,
+.stopwatch__pause,
+.stopwatch__stop,
+.stopwatch__change {
+    color: #d1d0dd;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.stopwatch__start,
+.stopwatch__pause,
+.stopwatch__stop,
+.stopwatch__change {
+    display: none;
+}
+
+.stopwatch__start.active {
+    display: block;
+}
+
+.stopwatch__change.active {
+    display: block;
+}
+
+.stopwatch__stop.active {
+    display: block;
+}
+
+.stopwatch__pause.active {
+    display: block;
+}

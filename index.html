@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="stopwatch">
+        <div class="stopwatch__wrap first">
+            <div class="stopwatch__bg"></div>
+            <div class="stopwatch__title">
+                Секундомер
+            </div>
+            <div class="stopwatch__time">
+                <div class="stopwatch__hour">00</div>
+                <div class="stopwatch__dotsHour">:</div>
+                <div class="stopwatch__min">00</div>
+                <div class="stopwatch__dots">:</div>
+                <div class="stopwatch__sec">00</div>
+                <div class="stopwatch__dot">.</div>
+                <div class="stopwatch__ms">00</div>
+            </div>
+            <div class="btns">
+                <div class="stopwatch__add">
+                    <button class="stopwatch__stop">
+                        <i class="fas fa-stop"></i>
+                    </button>
+                    <button class="stopwatch__change active">
+                        <i class="fas fa-redo-alt"></i>
+                    </button>
+                </div>
+                <div class="stopwatch__btn">
+                    <button class="stopwatch__start active">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="stopwatch__pause">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
