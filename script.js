@@ -27,6 +27,7 @@ clear.addEventListener('click', () => {
     start.classList.add('active')
     clear.classList.remove('active')
     change.classList.add('active')
+    hours.innerHTML = '00'
     minutes.innerHTML = '00'
     seconds.innerHTML = '00'
     milSeconds.innerHTML = '00'
